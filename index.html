@@ -7,42 +7,97 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
               crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link href="style.css" rel="stylesheet">
 
-        <style>
-            .container {
-                width : 640px
-            }
-        </style>
-
-        <title>Hello, world!</title>
+        <title>My Profile</title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container">
-                <span class="navbar-brand mb-0 h1"><i class="bi bi-card-checklist"></i> SKKU-Todo</span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jaegyun Lee</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
 
+
+                    </ul>
+
+                </div>
             </div>
         </nav>
         <div class="container">
-            <div class="d-flex align-items-center mb-2 mt-2">
+            <div class="d-flex mb-3 mt-4 justify-content-around">
 
-                <input type="text" class="form-control" id="task-input"
-                       placeholder="Enter a task here">
-                <button type="button" id="add" class="btn btn-primary ms-1 text-nowrap"><i class="bi bi-plus"></i>Add</button>
-            </div>
-            <div class="d-flex">
-                <div class="flex-grow-1 bg-light rounded-2 p-2 me-1 w-50">
-                    <h3>Todos</h3>
-                    <div id="todo-list">
-                        <div class="task bg-light p-1 rounded-2 ps-2">Sample task</div>
-
+                <div class="card" style="width: 19rem;">
+                    <img src="photo.png" class="card-img-top" alt="My photo">
+                    <div class="card-body">
+                        <h5 class="card-title">My Information</h5>
+                        <p class="card-text">Jaegyun Lee<br><a class="card-link" href="mailto:dreams200260@g.skku.edu">dreams200260@g.skku.edu</a><br>SKKU Software 21<br>League of Legends Bronze 22'</p>
+                        <a href="https://github.com/dreams60" class="btn btn-primary">My GitHub</a>
+                        <a href="https://www.op.gg/summoners/kr/%ED%92%80%EB%9C%AF%EB%8A%94%EC%98%A4%EB%A6%AC%EB%84%88%EA%B5%AC%EB%A6%AC" class="btn btn-primary">My LoL History</a>
                     </div>
                 </div>
-                <div class="flex-grow-1 bg-light rounded-2 p-2 w-50">
-                    <h3>Done</h3>
-                    <div id="done-list">
-
+                <div class="card" style="width: 19rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">My Favorite Food Rank</h5>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Reason</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="custom-01" scope="row">1</th>
+                                <td>Hawaiian Pizza</td>
+                                <td>Bread</td>
+                                <td class="custom-02">Pineapple</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>순두부찌개</td>
+                                <td>Stew</td>
+                                <td>Tofu</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>비비고 새우만두</td>
+                                <td>Dumpling</td>
+                                <td>Shrimp</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
+
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="flex-grow-1 bg-light rounded-2 p-2 me-1 w-50 border border-dark">
+                    <h3>Todos</h3>
+                    <ol>
+                        <li>Buy Coffee</li>
+                        <li>Drink Monster</li>
+                        <li>Do Study</li>
+                    </ol>
+                </div>
+                <div class="flex-grow-1 bg-light rounded-2 p-2 w-50 border border-warning">
+                    <h3>Done</h3>
+                    <p class="text-justify">Very Sad..</p>
+                    <ul>
+                        <li>Nothing</li>
+
+                    </ul>
                 </div>
             </div>
 

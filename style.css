@@ -1,0 +1,18 @@
+#main {color:red; font-size: 12px;}
+
+.content {color:orange;}
+
+
+p.content.welcome {color:green;}
+
+.container {
+    width : 720px
+}
+
+.custom-01 {
+    color: blue;
+}
+
+.custom-02 {
+    font-style: italic;
+}
